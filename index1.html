@@ -1,0 +1,126 @@
+﻿<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Love</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+<meta name="keywords" content="" />
+<meta name="description" content="" />	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+	
+	<script type="text/javascript" src="js/jq.snow.js"></script>
+</head> 
+
+<body>
+<!--下面是调用方法和参数说明-->
+	<script>
+	$(function(){
+		$.fn.snow({ 
+			minSize: 5,		//雪花的最小尺寸
+			maxSize: 50, 	//雪花的最大尺寸
+			newOn: 150		//雪花出现的频率 这个数值越小雪花越多
+		});
+	});
+	</script>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+        <span class="space"/><span class="comments">* 云燕：今天是2018年9月16日。</span><br />
+        <span class="space"/><span class="comments">* 我写这个网站来庆祝这个特殊的日子。 </span><br />
+        <span class="space"/><span class="comments">* 虽然，我不是一个很擅长表达言语的人。 </span><br />
+        <span class="space"/><span class="comments">* 但我希望我们能记住我们在一起的每一刻。</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"云燕"</span>);<br/>
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"小伟"</span>);<br />
+				<span class="comments">//茫茫人海，我遇上了你，不经意间深深地爱上了你。自从认识了你，我的回忆，一次比一次甜蜜；我的爱，一次比一次浓烈。爱的那么真！那么甜！那么苦！那么辣！那么酸！如果我是你近旁的一株木棉，那么我就要和你缠绕在一齐，根，紧握在地里；叶，相触在云里。
+			    </span><br />
+				<span class="comments">// 在一起三年多了， 这是我第一次给你写的情书，现在回想过去的点点滴滴， 发现我亏欠了你很多， 没有尽到一个男朋友的责任，没有把你照顾好， 还老是惹你生气， 但是你总是原谅了我。这大概就是爱情的力量吧， 使我们互相包容。</span><br />
+				<span class="comments">// 在高中毕业以后， 我们在一起的时间就越来越少。 分隔两地使我在深夜想起你。 在你上大学以后我们只有在放长假的时候才能去找你， 然而在那一段时光中我也没有这个好你，老是惹你生气了。
+				</span><br />
+        <span class="comments">// 本想着大学毕业以后我们就不用分隔两地了， 但是随着时间的变化又想考研了， 我们在一起的时间又要推迟两年了。
+        在这方面， 我感觉特别内疚， 没有给到你一个美好的爱情， 因为分隔两地在你生病不舒服的时候都没能在你身边照顾你。 </span><br />
+				<span class="comments">// 当我闻到你秀发上淡淡的清香。 </span><br />
+				我爱你;
+				<span class="comments">//当我感受到我剧烈的心跳，我明白了：</span><br />
+				我想你;
+				<span class="comments">// 你在我心中最美。 </span><br />
+				我想照顾你 
+				<span class="comments">// 你是我今生的唯一！</span><br />
+				<span class="keyword">我会</span> 永远  <span class="keyword">爱你</span>;<br />
+				<span class="keyword">一直</span> 爱你 <br />
+				<span class="placeholder"/>我有一颗永远不变的心<br />
+				<span class="placeholder"/>爱你 = 想你<br />
+
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						        云燕,我已经相爱了：
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						<div class="signature">--小伟</div>
+					</div>
+				</div>
+
+
+				     </div>
+				</div>
+			</div>
+</div>
+	<div class="bg1">	
+		<div class="main">
+			<footer style="line-height:20px">
+                <div id="copyright">
+                   
+                </object>
+                </div>
+		</div>
+	</div>
+</div>
+
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2016, 03, -32);
+		together.setHours(00);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+		    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+	 
+</body>
+</html>
